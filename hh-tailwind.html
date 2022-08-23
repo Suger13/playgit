@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-slate-200">
+
+    <div class="flex flex-row justify-center items-center h-[100vh]">
+
+        <div class="bg-white rounded-xl flex flex-col p-5">
+
+            <form action="#">
+                <h1 class="text-black text-xl p-4">Login to Website</h1>
+                <label for="email"> Email
+                    <input type="email" id="email" class="border outline-zinc-600 p-2 rounded-xl ml-7 mb-2
+                    hover:border-violet-500
+                    focus:outline-violet-300">
+                </label>
+                <br>
+
+                <label for="passoword" class="mb-5"> 
+                    Password
+                </label>
+                <input type="password" id="password" class="border outline-zinc-600 p-2 rounded-xl mb-5
+                hover:botder-violet-500
+                focus:outline-violet-300">
+
+                <br>
+
+                <button class="w-36 p-2 border rounded-full bg-violet-500 text-white
+                active:bg-violet-600 
+                hover:bg-violet-400 
+                focus: ring-violet-300 focus:ring-2">Sign In</button>
+
+                <button class="w-36 p-2 border rounded-full bg-white 
+                hover:bg-violet-100 
+                focus: ring-violet-300 focus:ring text-violet-600">Sign Up</button>
+            </form>
+
+            
+        </div>
+
+    </div>
+</body>
+</html>

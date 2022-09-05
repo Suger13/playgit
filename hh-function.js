@@ -19,10 +19,10 @@ const subtracted = subtract(5,5);
 const mutiplied = mutiply(5,5);
 const devided = devide(5,5);
 
-const arrowAdd = (a,b) => a+b;
-const arrowSubtract = (a,b) => a-b;
-const arrowMutiply = (a,b) => a*b;
-const arrowDevide = (a,b) => a/b;
+const arrowAdd = (a,b) => a + b;
+const arrowSubtract = (a,b) => a - b;
+const arrowMutiply = (a,b) => a * b;
+const arrowDevide = (a,b) => a / b;
 
 const calculator = {
     add : arrowAdd,

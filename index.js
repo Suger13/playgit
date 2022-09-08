@@ -1,22 +1,23 @@
-const myArr = ["Hello", "is", "name", "aun", "my"] //my name is aun
-const myObj = {
-    a :1
+const productPrice = [1000,200,100,400];
+
+//Higher Order fucntion
+function calculationPrices(price, operation){ //(ราคาที่จะลด, %ที่จะลด)
+    for (let i = 0; i<productPrice.length;i++){
+        operation(price, i); //++ callback return productPrice[i]
+    }
+    return productPrice;
 }
 
-myArr.unshift("dddd");
-myArr.pop();
-console.log(myArr);
-console.log(typeof(typeof(myObj)))
+//call back
+function discount5Percent(productPrice, i){
+    productPrice[i] = productPrice[i] - (productPrice[i] * 0.05);
+    return productPrice[i]; //++ 
+}
 
-const a = true;
-const b = "true";
+//callback
+function discount10Percent(productPrice, i){
+    productPrice[i] = productPrice[i] - (productPrice[i] * 0.1);
+    return productPrice[i]; //++
+}
 
-console.log(typeof(a))
-console.log(typeof(b))
-
-console.log(Object.is(NaN,NaN))
-
-console.log(Boolean("true"))
-
-let mes;
-
+console.log(calculationPrices(productPrice, discount5Percent))

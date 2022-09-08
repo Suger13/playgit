@@ -22,3 +22,12 @@ function isPlainObject(obj) {
   console.log(null === N)
 
   console.log(null !== null)
+
+
+  const myobj1 = [
+    {asd : "JJJ"},
+    {ase : "kkk"},
+    {asc : "lll"}
+  ]
+
+  console.log(myobj1.length);

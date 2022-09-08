@@ -38,3 +38,5 @@ let scoreRoom3Result = atLeastFive(studentScoresRoom3, isFive)
 console.log(scoreRoom1Result)
 console.log(scoreRoom2Result)
 console.log(scoreRoom3Result)
+
+//;oijawef;oijawef;oijawef;oiajwefo;ijawef;oij;
